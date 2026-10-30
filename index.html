@@ -2,90 +2,102 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Riverora – Something New Awaits Along Every River</title>
-<meta name="description" content="A friendly guide to riverside places, slow journeys and simple outdoor ideas. Find Your Next Favorite spot and Discover More Options.">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<meta name="keywords" content="Something New Awaits, Find Your Next Favorite, Discover More Options, Explore What’s Trending, Your Search Ends Here, Explore. Choose. Enjoy., Make Every Click Count">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riverora – A Friendly Guide to Riverside Places and Slow Journeys</title>
+<meta name="description" content="Riverora is an independent guide to riverside walks, old bridge towns, gentle water trails and simple outdoor ideas, with safety notes and seasonal tips.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0f4c75">
+<meta name="author" content="Riverora">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%230f4c75'/%3E%3Cpath d='M8 20c5-5 9 5 16 0s11 5 16 0' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M8 29c5-5 9 5 16 0s11 5 16 0' fill='none' stroke='%23f4a259' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Riverora">
+<meta property="og:title" content="Riverora – A Friendly Guide to Riverside Places and Slow Journeys">
+<meta property="og:description" content="Riverside walks, old bridge towns, gentle water trails and simple outdoor ideas, explained in plain language.">
+<meta name="twitter:card" content="summary">
 <style>
-:root{--ink:#0d2b3e;--deep:#0f4c75;--teal:#1b9aaa;--mint:#d9f2ef;--sand:#fff7ea;--sun:#f4a259;--bg:#f6fbfb;--card:#fff;--txt:#26404f;--mut:#5d7686;--line:#dcebed;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8f4f6;--deep:#7cc4e6;--teal:#3cc0cf;--mint:#12363f;--sand:#1d2a2e;--sun:#f4a259;--bg:#0b1a22;--card:#112530;--txt:#cfe1e8;--mut:#93aeba;--line:#1d3846}}
-:root[data-theme="dark"]{--ink:#e8f4f6;--deep:#7cc4e6;--teal:#3cc0cf;--mint:#12363f;--sand:#1d2a2e;--sun:#f4a259;--bg:#0b1a22;--card:#112530;--txt:#cfe1e8;--mut:#93aeba;--line:#1d3846}
+:root{--ink:#0d2b3e;--deep:#0f4c75;--teal:#137c8a;--mint:#d9f2ef;--sand:#fff7ea;--sun:#f4a259;--bg:#f6fbfb;--card:#fff;--txt:#26404f;--mut:#4f6a7a;--line:#dcebed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8f4f6;--deep:#7cc4e6;--teal:#3cc0cf;--mint:#12363f;--sand:#1d2a2e;--bg:#0b1a22;--card:#112530;--txt:#cfe1e8;--mut:#93aeba;--line:#1d3846}}
+:root[data-theme="dark"]{--ink:#e8f4f6;--deep:#7cc4e6;--teal:#3cc0cf;--mint:#12363f;--sand:#1d2a2e;--bg:#0b1a22;--card:#112530;--txt:#cfe1e8;--mut:#93aeba;--line:#1d3846}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.7;font-size:17px}
 .wrap{width:100%;max-width:1480px;margin:0 auto;padding:0 clamp(18px,4vw,64px)}
 header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:26px;color:var(--ink);text-decoration:none;letter-spacing:.3px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:26px;color:var(--ink);text-decoration:none}
 .logo svg{width:40px;height:40px}
-.nav nav{display:flex;gap:22px;flex-wrap:wrap}
+.nav nav{display:flex;gap:20px;flex-wrap:wrap}
 .nav nav a{color:var(--mut);text-decoration:none;font-weight:600;font-size:15px}
 .nav nav a:hover{color:var(--teal)}
-.hero{background:linear-gradient(135deg,#0f4c75 0%,#1b9aaa 70%,#5fd0c4 100%);color:#fff;position:relative;overflow:hidden}
+.hero{background:linear-gradient(135deg,#0f4c75 0%,#137c8a 70%,#3aa89e 100%);color:#fff;position:relative;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:80px;padding-bottom:130px}
 .tag{display:inline-block;background:rgba(255,255,255,.18);padding:6px 16px;border-radius:30px;font-size:14px;font-weight:600;margin-bottom:18px}
-.hero h1{font-size:clamp(34px,5vw,64px);line-height:1.12;margin-bottom:20px;color:#fff}
-.hero p{font-size:19px;max-width:640px;opacity:.95;margin-bottom:30px}
+.hero h1{font-size:clamp(34px,5vw,60px);line-height:1.12;margin-bottom:20px;color:#fff}
+.hero p{font-size:19px;max-width:640px;margin-bottom:30px}
 .btns{display:flex;gap:14px;flex-wrap:wrap}
 .btn{display:inline-block;padding:14px 30px;border-radius:40px;font-weight:700;text-decoration:none;font-size:16px}
 .b1{background:var(--sun);color:#3a1f00}
 .b2{border:2px solid #fff;color:#fff}
-.stat{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.stat div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:24px;text-align:center}
-.stat b{display:block;font-size:34px}
-.stat span{font-size:14px;opacity:.9}
+.glance{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:22px;padding:28px}
+.glance h2{font-size:22px;color:#fff;margin-bottom:12px}
+.glance ul{list-style:none}
+.glance li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.2);font-size:16px}
+.glance li:last-child{border:0}
 .wave{position:absolute;left:0;bottom:-1px;width:100%;height:90px;display:block}
-section{padding:80px 0}
+section{padding:76px 0}
 .alt{background:var(--mint)}
 .sand{background:var(--sand)}
-h2{font-size:clamp(28px,3.6vw,44px);color:var(--ink);line-height:1.2;margin-bottom:14px}
-.lead{max-width:820px;color:var(--mut);font-size:18px;margin-bottom:40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:0 8px 24px rgba(15,76,117,.07);transition:transform .2s}
-.card:hover{transform:translateY(-5px)}
-.ico{width:60px;height:60px;border-radius:18px;background:linear-gradient(135deg,var(--teal),var(--deep));display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:18px}
+h2{font-size:clamp(28px,3.6vw,42px);color:var(--ink);line-height:1.2;margin-bottom:14px}
+.lead{max-width:860px;color:var(--mut);font-size:18px;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 8px 24px rgba(15,76,117,.07)}
+.ico{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,var(--teal),var(--deep));display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
 .card h3{color:var(--ink);font-size:21px;margin-bottom:8px}
 .card p{color:var(--mut);font-size:16px}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.split ul{list-style:none;margin-top:18px}
-.split li{padding:12px 0 12px 36px;position:relative;border-bottom:1px dashed var(--line)}
-.split li:before{content:"〰";position:absolute;left:0;color:var(--teal);font-weight:800}
-.panel{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:36px;box-shadow:0 12px 30px rgba(15,76,117,.1)}
+.card p+p{margin-top:10px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.plist{list-style:none;margin-top:6px}
+.plist li{padding:14px 0;border-bottom:1px dashed var(--line)}
+.plist b{color:var(--ink);display:block}
+.plist span{color:var(--mut);font-size:16px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:0 12px 30px rgba(15,76,117,.1)}
 .panel h3{color:var(--ink);margin-bottom:10px;font-size:22px}
+.panel ul{margin:10px 0 0 20px;color:var(--mut)}
+.panel li{margin-bottom:6px}
 .trend{display:flex;gap:18px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}
-.num{flex:0 0 52px;height:52px;border-radius:50%;background:var(--sun);color:#3a1f00;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center}
+.num{flex:0 0 50px;height:50px;border-radius:50%;background:var(--sun);color:#3a1f00;font-weight:800;font-size:21px;display:flex;align-items:center;justify-content:center}
 .trend h3{color:var(--ink);font-size:19px;margin-bottom:4px}
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
-.step{background:var(--card);border-radius:22px;padding:32px;border-top:6px solid var(--teal);border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-.step h3{color:var(--ink);font-size:24px;margin-bottom:8px}
-.cta{background:linear-gradient(135deg,#0d2b3e,#0f4c75);color:#fff;text-align:center;border-radius:30px;padding:64px 28px}
-.cta h2{color:#fff}
-.cta p{max-width:700px;margin:0 auto 28px;opacity:.92}
+.trend p{color:var(--mut);font-size:16px}
+.step{background:var(--card);border-radius:22px;padding:30px;border:1px solid var(--line);border-top:6px solid var(--teal)}
+.step h3{color:var(--ink);font-size:23px;margin-bottom:8px}
+.step p{color:var(--mut)}
+.tablebox{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;min-width:560px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:16px;vertical-align:top}
+th{background:var(--deep);color:#fff}
+td:first-child{font-weight:700;color:var(--ink)}
+.info h2{margin-bottom:10px}
+.info p{max-width:900px;margin-bottom:14px;color:var(--txt)}
+.info h3{color:var(--ink);margin:22px 0 6px;font-size:21px}
+.info a{color:var(--teal)}
+.note{background:var(--card);border-left:5px solid var(--sun);border-radius:12px;padding:18px 22px;max-width:900px;margin-top:20px;font-size:16px;color:var(--mut)}
 footer{background:#0d2b3e;color:#b9d3dc;padding:50px 0 30px;font-size:15px}
 footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:28px}
 footer h4{color:#fff;margin-bottom:10px}
 footer a{display:block;color:#b9d3dc;text-decoration:none;padding:3px 0}
 footer a:hover{color:#fff}
 .copy{border-top:1px solid #1d4257;padding-top:20px;text-align:center;font-size:14px}
-@media(max-width:900px){.hero .wrap,.split,footer .cols{grid-template-columns:1fr}.hero .wrap{padding-top:50px;padding-bottom:110px}section{padding:56px 0}}
+@media(max-width:900px){.hero .wrap,.split,footer .cols{grid-template-columns:1fr}.hero .wrap{padding-top:50px;padding-bottom:110px}section{padding:54px 0}}
 </style>
-<meta name="googlebot" content="index, follow">
-<meta name="theme-color" content="#0f4c75">
-<meta name="author" content="Riverora">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Riverora">
-<meta property="og:title" content="Riverora – Something New Awaits Along Every River">
-<meta property="og:description" content="A friendly guide to riverside places, slow journeys and simple outdoor ideas. Find Your Next Favorite spot and Discover More Options.">
-<meta name="twitter:card" content="summary">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","name":"Riverora","description":"A friendly guide to riverside places, slow journeys and simple outdoor ideas.","inLanguage":"en"},
-{"@type":"WebPage","name":"Riverora – Something New Awaits Along Every River","description":"Find Your Next Favorite riverside place, Discover More Options and Explore What’s Trending.","inLanguage":"en","keywords":"Something New Awaits, Find Your Next Favorite, Discover More Options, Explore What’s Trending, Your Search Ends Here, Explore. Choose. Enjoy., Make Every Click Count"},
+{"@type":"WebSite","name":"Riverora","description":"An independent guide to riverside places, slow journeys and simple outdoor ideas.","inLanguage":"en"},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"How do I choose a riverside place that suits me?","acceptedAnswer":{"@type":"Answer","text":"Start with the mood you want, such as quiet green banks, old bridge towns or gentle water trails, then compare how to reach it, how long to stay and the best season."}},
-{"@type":"Question","name":"What should I carry for a riverside walk?","acceptedAnswer":{"@type":"Answer","text":"Carry water, wear shoes with good grip, keep a light layer for changing weather and bring a bag to take your litter back with you."}},
-{"@type":"Question","name":"When is the best time to visit a river?","acceptedAnswer":{"@type":"Answer","text":"Early mornings and late afternoons usually give cooler air, softer light and fewer crowds. Always check local conditions and timings first."}}
+{"@type":"Question","name":"What should I carry for a riverside walk?","acceptedAnswer":{"@type":"Answer","text":"Carry drinking water, wear shoes with good grip, keep a light layer for changing weather and bring a bag to take your litter back with you."}},
+{"@type":"Question","name":"When is the best time to visit a river?","acceptedAnswer":{"@type":"Answer","text":"Early mornings and late afternoons usually give cooler air, softer light and fewer crowds. Always check local conditions and timings first."}},
+{"@type":"Question","name":"Is it safe to swim in a river?","acceptedAnswer":{"@type":"Answer","text":"Not unless the spot is officially marked for swimming. Currents, cold water and hidden obstacles can be dangerous, and water levels change quickly after rain."}},
+{"@type":"Question","name":"Does Riverora sell tours or bookings?","acceptedAnswer":{"@type":"Answer","text":"No. Riverora is an information guide only. We do not sell tickets, tours or accommodation."}}
 ]}
 ]}
 </script>
@@ -93,10 +105,10 @@ footer a:hover{color:#fff}
 <body>
 <header role="banner">
 <div class="wrap nav">
-<a class="logo" href="#top" aria-label="Home">
+<a class="logo" href="#top" aria-label="Riverora home">
 <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b9aaa"/><stop offset="1" stop-color="#0f4c75"/></linearGradient></defs><circle cx="24" cy="24" r="23" fill="url(#g)"/><path d="M8 20c5-5 9 5 16 0s11 5 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M8 29c5-5 9 5 16 0s11 5 16 0" fill="none" stroke="#f4a259" stroke-width="3" stroke-linecap="round"/></svg>
 <span>Riverora</span></a>
-<nav aria-label="Main navigation"><a href="#favorite">Favorites</a><a href="#options">Options</a><a href="#trending">Trending</a><a href="#search">Tips</a><a href="#enjoy">How It Works</a></nav>
+<nav aria-label="Main navigation"><a href="#favorite">Favorites</a><a href="#options">Places</a><a href="#trending">Trending</a><a href="#search">Safety</a><a href="#seasons">Seasons</a><a href="#faq">FAQ</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
 </div>
 </header>
 
@@ -106,14 +118,18 @@ footer a:hover{color:#fff}
 <div>
 <span class="tag">Riverside ideas &amp; slow journeys</span>
 <h1>Something New Awaits Along Every River</h1>
-<p>Welcome to Riverora, a friendly place to learn about riverside towns, calm water trails and simple outdoor ideas. Read, compare and plan at your own pace.</p>
+<p>Riverora is an independent, easy-to-read guide to riverside towns, calm water trails and simple outdoor ideas. Read, compare and plan a calm day by the water at your own pace.</p>
 <div class="btns"><a class="btn b1" href="#favorite">Start Exploring</a><a class="btn b2" href="#enjoy">See How It Works</a></div>
 </div>
-<div class="stat">
-<div><b>120+</b><span>Riverside places described</span></div>
-<div><b>40</b><span>Easy walking routes</span></div>
-<div><b>25</b><span>Seasonal ideas</span></div>
-<div><b>100%</b><span>Plain, honest guidance</span></div>
+<div class="glance">
+<h2>On this page</h2>
+<ul>
+<li>Four easy riverside moods to choose from</li>
+<li>Well-known riverside places around the world</li>
+<li>Safety notes for walks, boat rides and picnics</li>
+<li>A simple season-by-season guide</li>
+<li>Plain answers to common questions</li>
+</ul>
 </div>
 </div>
 <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C240 100 480 0 720 40 S1200 90 1440 30 L1440 90 L0 90Z" fill="#f6fbfb"/></svg>
@@ -122,12 +138,12 @@ footer a:hover{color:#fff}
 <section id="favorite" aria-labelledby="h-fav">
 <div class="wrap">
 <h2 id="h-fav">Find Your Next Favorite</h2>
-<p class="lead">Every river has a different mood. Some are quiet and green, some lively and full of old bridges. These starting points help you notice what suits you best.</p>
+<p class="lead">Every river has a different mood. Some are quiet and green, others lively and full of old bridges. These four starting points help you notice what suits you best.</p>
 <div class="grid">
-<div class="card"><div class="ico">🌿</div><h3>Quiet Green Banks</h3><p>Shaded paths, birdsong and benches made for slow mornings and a good book.</p></div>
-<div class="card"><div class="ico">🌉</div><h3>Old Bridge Towns</h3><p>Stone bridges, small cafés and market streets that reward a relaxed walk.</p></div>
-<div class="card"><div class="ico">🚣</div><h3>Gentle Water Trails</h3><p>Calm stretches suitable for first-time paddlers, with simple safety notes.</p></div>
-<div class="card"><div class="ico">🌅</div><h3>Sunset Viewpoints</h3><p>Open banks and ghats where the light turns gold and the crowds thin out.</p></div>
+<div class="card"><div class="ico">🌿</div><h3>Quiet Green Banks</h3><p>Shaded paths, birdsong and benches made for slow mornings. Look for riverside parks and long promenades with tree cover.</p></div>
+<div class="card"><div class="ico">🌉</div><h3>Old Bridge Towns</h3><p>Stone bridges, small cafés and market streets that reward a relaxed walk. Many river towns grew around a crossing point, so the old centre is usually close to the water.</p></div>
+<div class="card"><div class="ico">🚣</div><h3>Gentle Water Trails</h3><p>Calm stretches suited to slow boat rides or beginner paddling with a guide. Choose operators that provide life jackets and brief you on safety first.</p></div>
+<div class="card"><div class="ico">🌅</div><h3>Sunset Viewpoints</h3><p>Open banks, ghats and bridges where the light turns gold. These spots can get busy, so arrive early and plan how you will get back.</p></div>
 </div>
 </div>
 </section>
@@ -136,20 +152,27 @@ footer a:hover{color:#fff}
 <div class="wrap split">
 <div>
 <h2 id="h-opt">Discover More Options</h2>
-<p class="lead" style="margin-bottom:10px">Not everyone enjoys a river in the same way. This guide lays out several easy styles so you can match the day to your energy.</p>
-<ul>
-<li>Short half-day walks along marked riverbanks</li>
-<li>Photography spots with the best morning light</li>
-<li>Family-friendly picnic areas with shade and space</li>
-<li>Local food stops reached on foot from the water</li>
-<li>Rainy-day ideas for museums and covered markets</li>
+<p class="lead" style="margin-bottom:18px">Here are a few well-known riverside places that show how different a river day can feel. Details such as timings and access can change, so confirm locally before you travel.</p>
+<ul class="plist">
+<li><b>Sabarmati Riverfront, Ahmedabad, India</b><span>A developed city promenade with long walkways, gardens and open seating, good for evening strolls.</span></li>
+<li><b>Ghats of Varanasi and Rishikesh, India</b><span>Stepped riverbanks on the Ganga known for morning walks and evening riverside gatherings. Follow local customs and signage.</span></li>
+<li><b>Hooghly riverside, Kolkata, India</b><span>Old ghats and views of the Howrah Bridge, with ferry rides that show the city from the water.</span></li>
+<li><b>Thames Path, England</b><span>A long walking trail that follows the Thames through villages, meadows and city centres.</span></li>
+<li><b>Banks of the Seine, Paris, France</b><span>A riverside stretch in the city centre that is recognised as a UNESCO World Heritage area, ideal for slow walks past bridges and bookstalls.</span></li>
 </ul>
 </div>
 <div class="panel">
 <h3>A simple way to compare</h3>
-<p>Each place listed here is described with the same few points, so you can compare quickly: how to reach it, how long to stay, the best season, accessibility and what to carry. No hype, only useful details.</p>
+<p>Whichever place you read about, look at the same few points so comparing stays easy:</p>
+<ul>
+<li>How to reach it and how long the journey takes</li>
+<li>How long most visitors stay</li>
+<li>The best season and time of day</li>
+<li>Accessibility: steps, slopes, seating and toilets</li>
+<li>What to carry and what rules apply</li>
+</ul>
 <br>
-<p><b>Good to know:</b> information is written for general guidance. Always check local conditions and timings before you travel.</p>
+<p><b>Good to know:</b> information here is written for general guidance. Always check local conditions, opening times and official notices before you go.</p>
 </div>
 </div>
 </section>
@@ -157,12 +180,12 @@ footer a:hover{color:#fff}
 <section id="trending" aria-labelledby="h-trend">
 <div class="wrap">
 <h2 id="h-trend">Explore What’s Trending</h2>
-<p class="lead">A look at the riverside ideas readers are enjoying most this season.</p>
+<p class="lead">Four riverside habits that many people are enjoying right now. None of them need special equipment or a big budget.</p>
 <div class="grid">
-<div class="trend"><div class="num">1</div><div><h3>Sunrise River Walks</h3><p>Cool air, soft light and empty paths. Early starts are winning fans.</p></div></div>
-<div class="trend"><div class="num">2</div><div><h3>Slow Boat Rides</h3><p>Unhurried rides that show a town from the water instead of the road.</p></div></div>
-<div class="trend"><div class="num">3</div><div><h3>Riverside Picnics</h3><p>Simple food, a cloth and a shady spot. Easy, cheap and relaxing.</p></div></div>
-<div class="trend"><div class="num">4</div><div><h3>Nature Journaling</h3><p>Sketching birds and reeds by the bank is a calm, screen-free habit.</p></div></div>
+<div class="trend"><div class="num">1</div><div><h3>Sunrise River Walks</h3><p>Cool air, soft light and empty paths. An early start also avoids midday heat and crowds.</p></div></div>
+<div class="trend"><div class="num">2</div><div><h3>Slow Boat Rides</h3><p>Unhurried rides that show a town from the water instead of the road. Use licensed operators only.</p></div></div>
+<div class="trend"><div class="num">3</div><div><h3>Riverside Picnics</h3><p>Simple food, a cloth and a shady spot. Pack reusable containers and carry all waste back out.</p></div></div>
+<div class="trend"><div class="num">4</div><div><h3>Nature Journaling</h3><p>Sketching birds, reeds and bridges by the bank is a calm, screen-free habit anyone can try.</p></div></div>
 </div>
 </div>
 </section>
@@ -170,16 +193,23 @@ footer a:hover{color:#fff}
 <section id="search" class="sand" aria-labelledby="h-search">
 <div class="wrap split">
 <div class="panel">
-<h3>Before you go</h3>
-<p>Wear shoes with grip, carry water, and tell someone your plan. Respect local customs and keep the banks clean by taking your litter back with you.</p>
+<h3>Riverside safety basics</h3>
+<ul>
+<li>Check the weather and recent rainfall. River levels and currents can change fast.</li>
+<li>Do not swim or wade unless the area is officially marked for it.</li>
+<li>Stay behind railings and away from slippery steps and wet edges.</li>
+<li>Wear a life jacket on any boat or paddle trip, even on calm water.</li>
+<li>Keep children and elders close, and tell someone your plan and return time.</li>
+<li>Respect local customs, keep the banks clean and take your litter with you.</li>
+</ul>
 </div>
 <div>
 <h2 id="h-search">Your Search Ends Here</h2>
-<p class="lead" style="margin-bottom:10px">Tired of scattered, confusing pages? Riverora keeps things clear: short descriptions, honest notes and tidy lists you can read in minutes.</p>
-<ul>
-<li>Plain language, no pressure and no pop-ups</li>
-<li>Seasonal reminders so you pick the right month</li>
-<li>Safety and accessibility notes on every place</li>
+<p class="lead" style="margin-bottom:14px">Tired of scattered, confusing pages? Riverora keeps things clear: short descriptions, honest notes and tidy lists you can read in minutes.</p>
+<ul class="plist">
+<li><b>Plain language</b><span>No pressure, no pop-ups and no confusing jargon.</span></li>
+<li><b>Seasonal reminders</b><span>Notes on which months suit walking, boating or photography.</span></li>
+<li><b>Safety and accessibility</b><span>Practical points included wherever they matter.</span></li>
 </ul>
 </div>
 </div>
@@ -189,10 +219,27 @@ footer a:hover{color:#fff}
 <div class="wrap">
 <h2 id="h-enjoy">Explore. Choose. Enjoy.</h2>
 <p class="lead">Three easy steps from curiosity to a pleasant day out.</p>
-<div class="steps">
-<div class="step"><h3>1. Explore</h3><p>Browse places by mood, season or distance and read the short overview.</p></div>
-<div class="step"><h3>2. Choose</h3><p>Compare a few options side by side and pick the one that fits your day.</p></div>
+<div class="grid">
+<div class="step"><h3>1. Explore</h3><p>Browse ideas by mood, season or distance and read the short overview.</p></div>
+<div class="step"><h3>2. Choose</h3><p>Compare a few options on the same points and pick the one that fits your day and energy.</p></div>
 <div class="step"><h3>3. Enjoy</h3><p>Go at your own pace, stay safe, and leave the riverbank as you found it.</p></div>
+</div>
+</div>
+</section>
+
+<section id="seasons" class="alt" aria-labelledby="h-seasons">
+<div class="wrap">
+<h2 id="h-seasons">A Simple Season Guide</h2>
+<p class="lead">General guidance only. Local weather differs from place to place, so check forecasts before travelling.</p>
+<div class="tablebox">
+<table>
+<thead><tr><th>Season</th><th>What it suits</th><th>Keep in mind</th></tr></thead>
+<tbody>
+<tr><td>Cool season</td><td>Long riverside walks, picnics and photography</td><td>Mornings can be foggy and chilly, so carry a light layer.</td></tr>
+<tr><td>Hot season</td><td>Early-morning and evening visits, shaded parks</td><td>Avoid midday sun, drink water often and wear a hat.</td></tr>
+<tr><td>Rainy season</td><td>Green scenery, covered markets and museums</td><td>Water levels rise quickly and banks get slippery. Follow local warnings.</td></tr>
+</tbody>
+</table>
 </div>
 </div>
 </section>
@@ -200,22 +247,49 @@ footer a:hover{color:#fff}
 <section id="faq" aria-labelledby="h-faq">
 <div class="wrap">
 <h2 id="h-faq">Quick Answers</h2>
-<p class="lead">Short, honest answers to the questions readers ask most.</p>
+<p class="lead">Short, honest answers to questions readers ask most.</p>
 <div class="grid">
 <div class="card"><h3>How do I choose a riverside place that suits me?</h3><p>Start with the mood you want, such as quiet green banks, old bridge towns or gentle water trails, then compare how to reach it, how long to stay and the best season.</p></div>
-<div class="card"><h3>What should I carry for a riverside walk?</h3><p>Carry water, wear shoes with good grip, keep a light layer for changing weather and bring a bag to take your litter back with you.</p></div>
+<div class="card"><h3>What should I carry for a riverside walk?</h3><p>Carry drinking water, wear shoes with good grip, keep a light layer for changing weather and bring a bag to take your litter back with you.</p></div>
 <div class="card"><h3>When is the best time to visit a river?</h3><p>Early mornings and late afternoons usually give cooler air, softer light and fewer crowds. Always check local conditions and timings first.</p></div>
+<div class="card"><h3>Is it safe to swim in a river?</h3><p>Not unless the spot is officially marked for swimming. Currents, cold water and hidden obstacles can be dangerous, and water levels change quickly after rain.</p></div>
+<div class="card"><h3>Does Riverora sell tours or bookings?</h3><p>No. Riverora is an information guide only. We do not sell tickets, tours or accommodation.</p></div>
 </div>
 </div>
 </section>
 
-<section class="alt" aria-labelledby="h-click">
+<section id="about" class="sand info" aria-labelledby="h-about">
 <div class="wrap">
-<div class="cta">
-<h2 id="h-click">Make Every Click Count</h2>
-<p>Spend a few minutes reading, pick one idea, and plan a calm day by the water. Your next riverside memory could be closer than you think.</p>
-<a class="btn b1" href="#top">Back to the Top</a>
+<h2 id="h-about">About Riverora</h2>
+<p>Riverora is an independent information website about riverside places, gentle walks and simple outdoor ideas. Our aim is to explain things in plain language so readers can plan calm, safe days by the water.</p>
+<p>We do not sell products, tours, tickets or accommodation, and we do not ask you to create an account or share personal details to read this page.</p>
 </div>
+</section>
+
+<section id="contact" class="info" aria-labelledby="h-contact">
+<div class="wrap">
+<h2 id="h-contact">Contact</h2>
+<p>Questions, corrections or suggestions are welcome. Write to us at <a href="mailto:contact@your-domain.com">contact@your-domain.com</a>. We aim to reply within a few working days.</p>
+</div>
+</section>
+
+<section id="privacy" class="alt info" aria-labelledby="h-privacy">
+<div class="wrap">
+<h2 id="h-privacy">Privacy Policy</h2>
+<p>This page does not ask you to submit forms or personal information. If you email us, we use your address only to reply to you and do not sell or share it.</p>
+<h3>Cookies and advertising</h3>
+<p>This site itself does not set tracking cookies. If advertising or analytics services are added in future, they may use cookies to measure visits or show ads. We will update this policy when that happens, and you can control cookies through your browser settings.</p>
+<h3>External links</h3>
+<p>If we link to other websites, we are not responsible for their content or privacy practices.</p>
+<p><small>Last updated: October 2026</small></p>
+</div>
+</section>
+
+<section id="disclaimer" class="info" aria-labelledby="h-disc">
+<div class="wrap">
+<h2 id="h-disc">Disclaimer</h2>
+<p>Content on Riverora is for general information only. Conditions on rivers change with weather, season and local rules. Always check official notices, timings and safety advice before travelling, and use your own judgement. Riverora is not responsible for any loss or injury arising from use of this information.</p>
+<div class="note">Place descriptions are brief summaries of well-known locations and are not a substitute for official tourism or safety information.</div>
 </div>
 </section>
 </main>
@@ -224,8 +298,8 @@ footer a:hover{color:#fff}
 <div class="wrap">
 <div class="cols">
 <div><h4>About Riverora</h4><p>An independent, easy-to-read guide to riverside places and gentle outdoor ideas. Written for curious people who like calm, simple plans.</p></div>
-<div><h4>Explore</h4><a href="#favorite">Favorites</a><a href="#options">Options</a><a href="#trending">Trending</a></div>
-<div><h4>Good to Know</h4><a href="#search">Travel tips</a><a href="#enjoy">How it works</a></div>
+<div><h4>Explore</h4><a href="#favorite">Favorites</a><a href="#options">Places</a><a href="#trending">Trending</a><a href="#seasons">Seasons</a><a href="#faq">FAQ</a></div>
+<div><h4>Information</h4><a href="#about">About</a><a href="#contact">Contact</a><a href="#privacy">Privacy Policy</a><a href="#disclaimer">Disclaimer</a></div>
 </div>
 <div class="copy">© 2026 Riverora. All rights reserved. Content is for general information only.</div>
 </div>
